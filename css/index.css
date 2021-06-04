@@ -22,6 +22,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    /* border: 1px solid gray; */
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -54,6 +55,25 @@ table {
 html, body {
     height: 100%;
     font-family: 'Roboto', sans-serif;
+}
+
+header nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3% 0 5%;
+    font-size: 14px;
+}
+
+header nav a {
+    color:black;
+    text-decoration: none;
+    padding: 0 4%;
+}
+
+header .header-image-container{
+    margin-bottom: 3%;
 }
 
 h1, h2, h3, h4, h5 {
@@ -112,6 +132,37 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box1{
+    background: teal;
+}
+.middle-content .boxes .box2{
+    background: gold;
+}
+.middle-content .boxes .box3{
+    background: cadetblue;
+}
+.middle-content .boxes .box4{
+    background: coral;
+}
+.middle-content .boxes .box5{
+    background: crimson;
+}
+.middle-content .boxes .box6{
+    background: forestgreen;
+}
+.middle-content .boxes .box7{
+    background: darkorchid;
+}
+.middle-content .boxes .box8{
+    background: hotpink;
+}
+.middle-content .boxes .box9{
+    background: indigo;
+}
+.middle-content .boxes .box10{
+    background: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +194,51 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+/* about page styling */
+.top-content-about p{
+    border-bottom: 1px dashed black;
+    padding: 0 3% 3%;
+    /* margin-bottom: 4%; */
+}
+
+.middle-content-about{
+    display:flex;
+    flex-flow: row wrap;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle-content-about .info-block{
+    display:flex;
+    flex-flow: column wrap;
+    width: 48%;
+    border-bottom: 1px dashed black;
+    margin: 5% 0;
+}
+
+.middle-content-about .info-block h2, .middle-content-about .info-block p{
+    margin: 3% 0 0;
+}
+
+.middle-content-about .info-block .learn-more-button{
+    margin: 3% 0;
+    width: 35%;
+    text-align: center;
+    text-decoration: none;
+    border: 2px solid black;
+    color: black;
+    border-radius: 10px;
+    padding: 3%;
+    transition: 0.5s;
+}
+.middle-content-about .info-block .learn-more-button:hover{
+    color: white;
+    background-color: black;
+}
+
+.bottom-content-about p{
+    margin-bottom: 3%;
 }
