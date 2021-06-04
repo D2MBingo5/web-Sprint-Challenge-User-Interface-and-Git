@@ -238,3 +238,7 @@ footer nav a {
     color: white;
     background-color: black;
 }
+
+.bottom-content-about p{
+    margin-bottom: 3%;
+}
